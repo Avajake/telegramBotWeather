@@ -21,6 +21,7 @@ public class TelegramService extends TelegramLongPollingBot {
 
             sendResponse(chatId, "Обработка погоды!");
 
+            //Отправка сообещние
             try {
                 String weather = weatherService.getfethcWeatherCity(message);
                 sendResponse(chatId, weather);
